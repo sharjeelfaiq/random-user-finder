@@ -37,7 +37,7 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }) => {
   };
 
   return (
-    <div className="w-3/4 flex flex-row items-center justify-center gap-5">
+    <div className="w-full flex flex-row items-center justify-center gap-5">
       <Button
         variant="text"
         className="flex items-center justify-center gap-1"

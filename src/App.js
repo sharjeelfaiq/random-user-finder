@@ -8,7 +8,7 @@ import ListingAndPagination from "./components/ListingAndPagination";
 const App = () => {
   const [data, setData] = useState([]);
   const [selectedGender, setSelectedGender] = useState("male");
-  const [selectNationality, setSelectNationality] = useState("au");
+  const [selectNationality, setSelectNationality] = useState("");
   // eslint-disable-next-line no-unused-vars
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
@@ -24,7 +24,7 @@ const App = () => {
   const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
   const nPages = Math.ceil(data.length / recordsPerPage);
 
-  const apiURL = `https://randomuser.me/api/?results=20&&selectedGender=${selectedGender}&seed=abcnat=${selectNationality}`;
+  const apiURL = `https://randomuser.me/api/?results=20&&selectedGender=${selectedGender}&seed=abcnat=${selectNationality ? selectNationality : "au"}`;
 
   useEffect(() => {
     const fetchData = async () => {
