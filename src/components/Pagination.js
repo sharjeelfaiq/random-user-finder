@@ -16,7 +16,7 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }) => {
     },
     className:
       active === index
-        ? "rounded-full text-black bg-yellow-500"
+        ? "w-6 rounded-full text-white bg-black"
         : "rounded-full text-black",
   });
 
@@ -37,7 +37,7 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }) => {
   };
 
   return (
-    <div className="w-3/4 flex flex-row items-center justify-center">
+    <div className="w-3/4 flex flex-row items-center justify-center gap-5">
       <Button
         variant="text"
         className="flex items-center justify-center gap-1"
@@ -46,7 +46,7 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }) => {
       >
         <ArrowLeftIcon strokeWidth={2} className="h-4 w-4" /> Previous
       </Button>
-      <div className="flex flex-row justify-center items-center">
+      <div className="flex flex-row justify-center items-center gap-3">
         {pageNumbers.map((pgNumber) => (
           <IconButton {...getItemProps(pgNumber)} key={pgNumber}>
             {pgNumber}
