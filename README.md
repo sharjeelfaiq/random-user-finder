@@ -2,6 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Install Node.js and Git
+
+Before getting started, make sure you have Node.js and Git installed on your PC.
+
+## Clone the Repository
+
+Clone the repository with the following command:
+```bash
+git clone https://github.com/sharjeelfaiq/random-user-finder.git
+```
+
+Navigate to the project directory using the command:
+cd random-user-finder
+
+Install the required packages by running:
+npm install
+
+If you encounter any errors during installation, try:
+npm install --legacy-peer-deps
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,3 +86,4 @@ Please refer to the following links for more information:
 * Advanced Configuration: https://github.com/facebook/create-react-app
 * Deployment: https://github.com/facebook/create-react-app
 * `npm run build` fails to minify: https://github.com/facebook/create-react-app/issues/6148
+](https://github.com/sharjeelfaiq/random-user-finder.git)
