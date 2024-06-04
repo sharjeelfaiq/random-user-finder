@@ -16,8 +16,8 @@ const Pagination = ({ nPages, currentPage, setCurrentPage }) => {
     },
     className:
       active === index
-        ? "w-6 rounded-full text-black bg-white"
-        : "rounded-full text-white",
+        ? "w-6 rounded-full text-white bg-black"
+        : "rounded-full text-black",
   });
 
   const next = () => {
